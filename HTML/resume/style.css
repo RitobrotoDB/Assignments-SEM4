@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Product;
+    src: url('Product\ Sans\ Regular.ttf');
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family:Product,serif;
+}
+
+body {
+    background-image: url('image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+div.container
+{
+    display:flex;
+
+}
+
+.left-section {
+    width: fit-content;
+    height:700px;
+    padding:10px;
+    margin-left: 370px;
+        background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+li.phone {
+    list-style-image: url('https://icons8.com/icon/12580/email.png');
+}
+
+li.email {
+    list-style-image: url('https://icons8.com/icon/12580/email');
+}
+
+li.location {
+    list-style-image: url('emai.png');
+}
+
+.right-section {
+
+    background-color: azure;
+    width:450px;
+    height:700px;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+.section-headings
+{
+    font-size: 20px;
+}
