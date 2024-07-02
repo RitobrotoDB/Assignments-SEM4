@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Product;
+    src: url('mops.ttf');
+}
+
+
+
+h1{font-size:50px;}
+dd {
+	display:block;
+    margin-inline-start: 1px;
+    unicode-bidi: isolate;
+}
+ul
+{    padding-inline-start: 0px;
+list-style-type:none;
+}
+html
+{background-color:azure;
+font-family:Product, serif;
+background-image:url('image.jpg');
+
+}
+body
+{border:1px solid black;
+background-color:white;
+width:800px;
+min-height:100vh;
+margin: 0px auto;
+
+}
