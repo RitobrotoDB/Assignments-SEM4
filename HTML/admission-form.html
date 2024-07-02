@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      p {
+        margin: 0;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        height: 5rem;
+      }
+    </style>
+  </head>
+  <body style="display: flex; flex-direction: column; min-width: 100vw">
+    <center style="text-align: center">
+      <h2 style="margin: 0">APPLICATION FORM FOR ADMISSION</h2>
+      <h3 style="margin: 0">Session 20&nbsp;&nbsp;-&nbsp;20</h3>
+    </center>
+    <form
+      style="display: flex; flex-direction: column; margin: 1rem; gap: 20px"
+    >
+      <input
+        style="
+          position: absolute;
+          right: 10px;
+          top: 110px;
+          border: 2px solid black;
+        "
+        height="100px"
+        width="100px"
+        type="image"
+	src="none"
+        alt="Attach Coloured Passport Size Photo duly attested"
+      />
+      <div>
+        <span>
+          <label for="admission-no"><b>Admission No</b></label>
+          <input type="text" id="admission-no" />
+        </span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>
+          <label for="date"><b>Date</b></label>
+          <input type="date" id="date" />
+        </span>
+      </div>
+      <p>
+        <label for="name">1. Student's name (Block Letters)</label>
+        <input type="text" id="name" />
+      </p>
+      <p>
+        <label for="class">2. Class in which admission is sought</label>
+        <input type="text" id="class" />
+      </p>
+      <div>
+        <span>
+          <label for="sex">3. Sex (Male/Female)</label>
+          <input type="text" id="sex" />
+        </span>
+        <span>
+          <label for="category">Category</label>
+          <input type="text" id="category" />
+        </span>
+      </div>
+      <p>
+        <label for="dob">4. Date of Birth</label>
+        <input type="date" id="dob" />
+      </p>
+      <div>
+        <span>
+          <label for="f-name">5. Father's name (Block Letters)</label>
+          <input type="text" id="f-name" />
+        </span>
+        <span>
+          <label for="f-occupation">Occcupation</label>
+          <input type="text" id="f-occupation" />
+        </span>
+      </div>
+      <div>
+        <span>
+          <label for="m-name">6. Mother's name (Block Letters)</label>
+          <input type="text" id="m-name" />
+        </span>
+        <span>
+          <label for="f-occupation">Occcupation</label>
+          <input type="text" id="f-occupation" />
+        </span>
+      </div>
+      <div style="display: flex; align-items: flex-start">
+        <label for="address">7. Present Address</label>&nbsp;&nbsp;
+        <div style="display: flex; flex-direction: column">
+          <textarea id="address" rows="3" cols="100"></textarea><br />
+          <span>
+            <span>
+              <label for="present-pin">Pin</label>
+              <input type="number" id="present-pin" />
+            </span>
+            <span>
+              <label for="present-phone">Contact No.</label>
+              <input type="tel" id="present-phone" />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div style="display: flex; align-items: flex-start">
+        <label for="address">8. Permanent Address</label>&nbsp;&nbsp;
+        <div style="display: flex; flex-direction: column">
+          <textarea id="address" rows="3" cols="100"></textarea><br />
+          <span>
+            <span>
+              <label for="perm-pin">Pin</label>
+              <input type="number" id="perm-pin" />
+            </span>
+            <span>
+              <label for="perm-phone">Contact No.</label>
+              <input type="tel" id="perm-phone" />
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <!-- marks -->
+      <p>9. Previous Academic Record:</p>
+      <table>
+        <tr>
+          <th>S.No.</th>
+          <th>School Last Attended</th>
+          <th>Class</th>
+          <th>Year</th>
+          <th>Marks</th>
+          <th>%age</th>
+          <th>Regular/Private</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <p>
+        <label for="jk-reg"
+          >10. J&K Board Registration No. (For Admission in 9<sup>th</sup> to
+          12<sup>th</sup> Class)</label
+        >
+        <input type="text" id="jk-reg" />
+      </p>
+
+      <b>(For Classes 11<sup>th</sup> & 12<sup>th</sup>)</b>
+      <span>
+        <b>Stream: &nbsp;&nbsp;</b>
+        <label for="science">Science</label>
+        <input
+          type="radio"
+          name="stream"
+          id="science"
+          style="margin-right: 1rem"
+        />
+
+        <label for="comm">Commerce</label>
+        <input
+          type="radio"
+          name="stream"
+          id="comm"
+          style="margin-right: 1rem"
+        />
+
+        <label for="arts">Arts</label>
+        <input
+          type="radio"
+          name="stream"
+          id="arts"
+          style="margin-right: 1rem"
+        />
+      </span>
+
+      <div style="display: flex">
+        11. <b>Subjects Offered:</b>
+        <div style="display: flex; flex-direction: column; margin-left: 1rem">
+          <div style="display: flex; gap: 2rem">
+            <p>
+              1.
+              <b>English</b
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <p>2. _______________</p>
+          </div>
+          <br />
+          <div style="display: flex; gap: 2rem">
+            <p>3. _______________</p>
+            <p>4. _______________</p>
+            <p>5. _______________</p>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        I solemnly affirm that the date of birth and particulars given above are
+        correct to the best of my knowledge and belief and that I have
+        reconfirmed the above entries which I clarify to be correct. I request
+        that admission may please be granted to my ward under .
+      </p>
+    </form>
+  </body>
+</html>
