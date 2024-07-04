@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define the structure for the adjacency list node
+// structure for node
 struct AdjListNode {
     int dest;
     struct AdjListNode* next;
 };
 
-// Define the structure for the adjacency list
+// structure for child nodes
 struct AdjList {
     struct AdjListNode *head;
 };
 
-// Define the structure for the graph
+// structure for the graph
 struct Graph {
     int V;
     struct AdjList* array;
@@ -49,13 +49,12 @@ void addEdge(struct Graph* graph, int src, int dest) {
     graph->array[dest].head = newNode;
 }
 
-// Function to perform DFS on the graph
 void DFSUtil(struct Graph* graph, int v, int* visited) {
     // Mark the current node as visited and print it
     visited[v] = 1;
     printf("Visited %d\n", v);
 
-    // Recur for all the vertices adjacent to this vertex
+    // all the vertices adjacent to this vertex
     struct AdjListNode* adjList = graph->array[v].head;
     while (adjList != NULL) {
         int adjVertex = adjList->dest;
