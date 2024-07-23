@@ -18,7 +18,6 @@ struct Graph {
     struct Child* array;
 };
 
-// Create a new adjacency list node
 struct Node* newnode(int dest) {
     struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
     newNode->dest = dest;
@@ -87,7 +86,7 @@ int dequeue(struct Queue* queue) {
 
 
 void BFS(struct Graph* graph, int startVertex) {
-    // Mark all the vertices as not visited
+    // Marking all the vertices as not visited
     int* visited = (int*) malloc(graph->V * sizeof(int));
     for (int i = 0; i < graph->V; i++)
         visited[i] = 0;

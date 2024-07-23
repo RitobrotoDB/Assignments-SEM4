@@ -1,28 +1,27 @@
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
+
 #define e(a) a+65
 #define nv 5
 
-typedef struct Node
-{
+typedef struct Node {
     char name;
     struct Node* next;
-    
-}Node;
+} Node;
 
- typedef struct Arrayofnodes {
+typedef struct Arrayofnodes {
     Node* heads[nv]; 
-}Arrayofnodes;
+} Arrayofnodes;
 
-
-Node* createNode(char data) 
-{
+Node* createNode(char data) {
     Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->name = data;
     newNode->next = NULL;
     return newNode;
 }
-void insertAtBeginning(Node** head, int data) {
+
+void insertAtBeginning(Node** head, char data) {
     Node* newNode = createNode(data);
     newNode->next = *head;
     *head = newNode;
@@ -31,28 +30,25 @@ void insertAtBeginning(Node** head, int data) {
 int main() {
     Arrayofnodes arrlist;
     char ch;
+
     for (int i = 0; i < nv; i++) {
         arrlist.heads[i] = NULL;
     }
-    for(int i=0;i<nv;i++)
-    {   printf("\nFor vertex %c enter the connecting vertices(Enter X to stop) : ",e(i));
-        while(1)
-        {
-            
-            scanf("%c",&ch);
-            insertAtBeginning(&arrlist.heads[i],ch);
-            if(ch=='X')
-            {
+
+    for (int i = 0; i < nv; i++) {
+        printf("\nFor vertex %c enter the connecting vertices (Enter X to stop): ", e(i));
+        while (1) {
+            scanf(" %c", &ch);  // Add space before %c to skip any whitespace characters
+            if (toupper(ch) == 'X') {
                 break;
             }
+            insertAtBeginning(&arrlist.heads[i], ch);
         }
     }
- 
 
-    for (int i = 0; i < nv; i++) 
-    {
+    for (int i = 0; i < nv; i++) {
         Node* current = arrlist.heads[i];
-        printf("Vertex %c : ", e(i));
+        printf("Vertex %c: ", e(i));
         while (current != NULL) {
             printf("%c ", current->name);
             current = current->next;
@@ -62,8 +58,3 @@ int main() {
 
     return 0;
 }
-
-
-
- 
- 
