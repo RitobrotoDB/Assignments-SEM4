@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marksheet</title>
+    <style>
+        body {
+            background-color: #fdf4dc;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #b0c4de;
+        }
+        .subject-header {
+            background-color: #dcd2b4;
+        }
+        .paper-cc1 {
+            background-color: #dcd2b4;
+        }
+        .paper-cc2 {
+            background-color: #e0ffff;
+        }
+        .footer {
+            margin-top: 20px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .status {
+            color: red;
+        }
+        .note {
+            color: red;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Name: Will Smith</h2>
+        <p>B.Sc. Computer Science (under CBCS)</p>
+        <p>Semester I (Hons.)</p>
+        <h3>Marksheet of Will Smith</h3>
+        <p>CU Roll Number: 3223 - 61 - 0023</p>
+        
+        <table>
+            <tr>
+                <th>Paper</th>
+                <th>Exam Type</th>
+                <th>Full Marks</th>
+                <th>Marks Obtained</th>
+            </tr>
+            <tr class="subject-header">
+                <td rowspan="4">CC - 1</td>
+                <td>Attendance</td>
+                <td>10</td>
+                <td>9</td>
+            </tr>
+            <tr class="paper-cc1">
+                <td>Internal Assessment</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr class="paper-cc1">
+                <td>Theory</td>
+                <td>50</td>
+                <td>48</td>
+            </tr>
+            <tr class="paper-cc1">
+                <td>Practical</td>
+                <td>30</td>
+                <td>29</td>
+            </tr>
+            <tr class="subject-header">
+                <td rowspan="4">CC - 2</td>
+                <td>Attendance</td>
+                <td>10</td>
+                <td>9</td>
+            </tr>
+            <tr class="paper-cc2">
+                <td>Internal Assessment</td>
+                <td>10</td>
+                <td>9</td>
+            </tr>
+            <tr class="paper-cc2">
+                <td>Theory</td>
+                <td>50</td>
+                <td>46</td>
+            </tr>
+            <tr class="paper-cc2">
+                <td>Practical</td>
+                <td>30</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>200</td>
+                <td>189</td>
+            </tr>
+        </table>
+        
+        <div class="footer">
+            <p>Percentage: 94.5%</p>
+            <p class="status">Status: Qualified to Semester 2</p>
+            <p class="note">Note: This is a computer generated marksheet. Collect your original marksheet from your college</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        form{
+            padding-top: 100px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        input{
+            width: 250px;
+            height: 50px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="padding-top: 50px;">Registration Form</h1>
+    </center>
+    <form method="post" action="first.php">
+        User Name: <input type="text" name="usrname" placeholder="Enter user id"> <br><br>
+        Password: <input type="password" name="pwd" placeholder="Enter your current/old password"> <br><br>
+        New Password: <input type="password" name="rstpwd" placeholder="Enter your new password"> <br><br>
+        <input type="submit" name="valid" value="Login">
+        <input type="submit" name="rst" value="Reset">
+    </form>
+</body>
+</html>
